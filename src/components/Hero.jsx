@@ -25,7 +25,7 @@ const Hero = () => {
             {social_media?.map((icon) => (
               <div
                 key={icon}
-                className="text-gray-600 hover:text-white cursor-pointer "
+                className="text-white hover:text-white cursor-pointer "
               >
                 <ion-icon name={icon}></ion-icon>
               </div>
