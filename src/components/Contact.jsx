@@ -18,7 +18,8 @@ const Contact = () => {
     },
     {
       logo: "logo-linkedin",
-      text: "bit.ly/3ZDgVdm",
+      text: "Gina Sonia Br Tobing",
+      url: "https://www.linkedin.com/in/ginatobing/",
     },
   ];
 
@@ -94,7 +95,16 @@ const Contact = () => {
                 <div className="min-w-[3.5rem]  text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
                   <ion-icon name={contact.logo}></ion-icon>
                 </div>
-                <p className="md:text-base text-sm break-words">
+                <p
+                  className="selectable cursor-pointer md:text-base text-sm break-words"
+                  onClick={() => window.open(contact.url, "_blank")}
+                  style={{
+                    WebkitUserSelect: "text",
+                    MozUserSelect: "text",
+                    msUserSelect: "text",
+                    userSelect: "text",
+                  }}
+                >
                   {contact.text}
                 </p>
               </div>
