@@ -7,13 +7,13 @@ const Hireme = () => {
           Hire <span className="text-cyan-600">Me</span>
         </h3>
         <p className="text-white mt-3 text-lg">
-          if You Are Interested Please Choose Me
+          if You Are Interested Please Contact Me
         </p>
       </div>
       <div className="bg-rose-700 relative px-10 rounded-2xl py-2 lg:max-w-xl mx-auto min-h-[24rem] mt-24 flex gap-6 lg:flex-row flex-col-reverse items-center">
         <div>
           <h2 className="text-2xl font-semibold">
-            Do you want me to work in our company?
+            Do you want me to work in your company?
           </h2>
           <p className="lg:text-left text-justify max-w-lg text-sm mt-4 text-gray-200 leading-6">
             I am a junior frontend developer who has quite a lot of experience
