@@ -10,7 +10,7 @@ const About = () => {
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="p-2">
             <div className="text-gray-300 my-3 ">
-              <p className="text-justify leading-7 w-11/12 ">
+              <p className="text-justify leading-7 ">
                 I graduated from English literature but I chose a career as a
                 Frontend Engineer. This happened because of my attitude which is
                 always willing to learn new things. I am able to collaborate in
