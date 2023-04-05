@@ -7,6 +7,7 @@ import project4 from "../assets/images/project-4.png";
 import project5 from "../assets/images/project-5.png";
 import project6 from "../assets/images/project-6.png";
 import project7 from "../assets/images/project-7.png";
+import project8 from "../assets/images/project-8.png";
 import project_person from "../assets/images/project_person1.png";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -57,6 +58,12 @@ const Project = () => {
       github_link: "https://github.com/Ginasonia98/pintar-ventura-dashboard",
       live_link: "https://pintar-ventura-dashboard.vercel.app/",
     },
+    {
+      img: project8,
+      name: "PokemonApp",
+      github_link: "https://github.com/Ginasonia98/pokemonapp",
+      live_link: "https://pokemonappgina.vercel.app/",
+    },
   ];
   return (
     <section id="projects" className="py-10 text-white">
@@ -87,6 +94,17 @@ const Project = () => {
             modules={[Pagination, Autoplay]}
             className="cursor-pointer"
           >
+            {/*
+              Beberapa properti yang digunakan dalam kode tersebut adalah:
+              slidesPerView: Menentukan jumlah slide yang ditampilkan dalam satu tampilan.
+              spaceBetween: Menentukan jarak antar slide.
+              breakpoints: Mengatur jumlah slide yang ditampilkan pada layar dengan lebar tertentu. Pada contoh di atas, ketika lebar layar mencapai 768px, jumlah slide yang ditampilkan menjadi 2.
+              loop: Menentukan apakah slideshow akan loop atau berhenti setelah slide terakhir.
+              autoplay: Mengatur otomatisasi slideshow dengan waktu delay 3000ms (3 detik).
+              pagination: Menampilkan tombol navigasi pada slideshow yang bisa diklik.
+              modules: Mengimpor modul-modul yang diperlukan untuk Swiper, yaitu Pagination dan Autoplay.
+              Komponen Swiper dapat menerima props tambahan seperti onSlideChange dan onSwiper yang bisa digunakan untuk menjalankan aksi tertentu pada slide tertentu. Selain itu, Swiper juga memiliki banyak opsi dan konfigurasi yang dapat diatur untuk membuat tampilan slideshow yang lebih kustom dan interaktif.
+            */}
             {projects.map((project_info, i) => (
               <SwiperSlide key={i} className="h-full">
                 <div className="h-full p-4 bg-rose-700 rounded-xl">

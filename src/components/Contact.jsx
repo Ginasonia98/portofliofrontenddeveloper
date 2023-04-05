@@ -9,6 +9,9 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const userCollectionRef = collection(db, "contactdata");
+  /**
+   *Pada kode di atas, db adalah objek yang merepresentasikan koneksi ke Firebase Firestore. Kemudian, collection adalah method yang digunakan untuk mengambil referensi ke koleksi di dalam database. collection menerima dua parameter: objek db dan nama koleksi yang ingin diakses, yaitu "contactdata".
+   */ 
 
   const contact_info = [
     { logo: "mail", text: "ginas.tobing@gmail.com" },
@@ -47,6 +50,13 @@ const Contact = () => {
       setMessage("");
     }
   };
+  /**
+   *Pertama-tama, fungsi ini akan memeriksa apakah semua field telah diisi dengan memeriksa nilai dari variabel name, email, dan message. Jika salah satu atau semua field tidak diisi, maka akan muncul alert yang memberitahu pengguna untuk mengisi semua field.
+  Namun, jika semua field telah diisi, maka fungsi akan memanggil addDoc untuk menambahkan dokumen baru ke koleksi "contactdata" pada database Firebase. Dokumen ini akan berisi informasi kontak pengguna yang diisi pada form.
+  Setelah dokumen berhasil ditambahkan ke database, fungsi akan memanggil then dan menampilkan alert yang memberitahu pengguna bahwa form telah berhasil disubmit. Setelah alert ditampilkan, halaman akan diarahkan ke halaman portfolio.
+  Jika terjadi error saat menambahkan dokumen ke database, fungsi akan memanggil catch dan menampilkan alert dengan pesan error yang dikembalikan oleh Firebase.
+  Setelah form berhasil disubmit, variabel name, email, dan message akan dikosongkan kembali sehingga form siap digunakan kembali oleh pengguna.
+   */
 
   return (
     <section id="contact" className="py-10 px-3 text-white">
@@ -80,6 +90,9 @@ const Contact = () => {
             <textarea
               placeholder="Your Message"
               rows={10}
+              /**
+               *Atribut rows diatur ke 10, sehingga area teks akan memiliki tinggi yang cukup besar untuk menampilkan 10 baris teks secara default. Jika teks yang dimasukkan melebihi jumlah baris yang ditentukan, maka area teks akan otomatis menambahkan baris sesuai kebutuhan.
+               */
               value={message}
               onChange={(event) => {
                 setMessage(event.target.value);
@@ -108,6 +121,10 @@ const Contact = () => {
                     msUserSelect: "text",
                     userSelect: "text",
                   }}
+                  /**
+                   *Fungsi dari kode tersebut adalah membuka link yang terdapat pada contact.url di jendela baru ketika tombol atau elemen yang diberi atribut onClick tersebut diklik. Penggunaan "__blank" pada window.open menyatakan bahwa link tersebut akan dibuka di jendela/tab baru, bukan jendela/tab yang sama.
+                    Sedangkan style yang diberikan pada elemen tersebut, yaitu WebkitUserSelect, MozUserSelect, msUserSelect, dan userSelect, menonaktifkan fungsi pemilihan teks (text selection) pada elemen tersebut. Hal ini berguna untuk mencegah pengguna dari melakukan pemilihan teks pada elemen tersebut, sehingga hanya tombol atau elemen yang dapat diklik.
+                   */
                 >
                   {contact.text}
                 </p>

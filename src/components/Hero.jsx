@@ -15,6 +15,9 @@ const Hero = () => {
       window.open("https://github.com/Ginasonia98?tab=repositories", "_blank");
     }
   };
+  /**
+   *Fungsi dari kode tersebut adalah membuat sebuah fungsi bernama handleSocialMediaClick yang akan dijalankan ketika user melakukan klik pada icon media sosial pada halaman web. Ketika user melakukan klik pada icon media sosial, maka akan membuka jendela baru pada tab browser yang menampilkan halaman profil media sosial  
+   * */ 
 
   return (
     <section id="home" className="flex py-10 md:flex-row flex-col items-center">
@@ -47,6 +50,9 @@ const Hero = () => {
               >
                 <ion-icon name={icon}></ion-icon>
               </div>
+              /**
+               *Kode tersebut membuat tiga ikon sosial media (Instagram, LinkedIn, dan GitHub) dan menambahkan properti seperti kunci "key" untuk memastikan React dapat membedakan satu elemen dari yang lain, properti "role" dan "tabIndex" untuk menjadikannya dapat diakses menggunakan keyboard, dan event listener "onClick" dan "onKeyPress" yang akan memicu fungsi "handleSocialMediaClick" ketika tombol ikon sosial media diklik atau ditekan pada keyboard. Fungsi "handleSocialMediaClick" akan membuka tautan URL sosial media yang sesuai dengan ikon yang diklik menggunakan method "window.open".
+               */
             ))}
           </div>
         </div>

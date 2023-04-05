@@ -16,6 +16,12 @@ const Navbar = () => {
       window.scrollY > 0 ? setSticky(true) : setSticky(false);
     });
   }, []);
+  /**
+   *Event listener yang ditambahkan adalah scroll yang mengecek apakah pengguna sedang melakukan scroll atau tidak. Jika iya, maka akan dicek apakah posisi scroll sudah melebihi 0 atau tidak.
+  Jika posisi scroll melebihi 0, maka nilai state sticky akan diubah menjadi true. Ini berarti bahwa header atau navbar akan dibuat menjadi "sticky" atau menempel di atas halaman ketika pengguna melakukan scroll ke bawah.
+  Jika posisi scroll kembali ke atas halaman, maka nilai state sticky akan diubah kembali menjadi false, sehingga header atau navbar akan kembali ke posisi semula.
+  Ketika argumen kedua pada useEffect() diberikan array kosong [], itu berarti bahwa efek hanya akan dieksekusi sekali ketika komponen di-mount. Ini berarti bahwa event listener hanya akan ditambahkan saat pertama kali komponen dirender, dan tidak akan ditambahkan lagi saat nilai state berubah.
+   */
   return (
     <nav
       className={`fixed w-full left-0 top-0 z-[999] ${
@@ -69,6 +75,10 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    /**
+     *Kode tersebut adalah untuk membuat sebuah navbar yang akan tampil di halaman web. Pada bagian className, terdapat beberapa kondisi yang akan menentukan warna dan styling dari navbar tersebut. Kondisi tersebut dipengaruhi oleh nilai dari state sticky yang diatur dengan useEffect ketika terjadi scroll pada halaman. Jika sticky bernilai true, maka navbar akan memiliki background warna rose-700 dan tulisan berwarna putih, sedangkan jika sticky bernilai false, maka navbar akan memiliki tulisan berwarna putih dan background transparan.
+      Pada bagian tengah navbar, terdapat judul GINA yang ditampilkan dalam font yang besar dan bold. Kemudian, terdapat juga menu navigasi yang ditampilkan dalam bentuk daftar. Daftar menu tersebut ditampilkan dengan warna putih jika sticky bernilai true, dan warna hitam jika sticky bernilai false. Menu navigasi ini akan tampil dalam bentuk daftar horizontal pada layar yang cukup besar, dan akan ditampilkan dalam bentuk dropdown pada layar yang lebih kecil (menggunakan tombol menu dengan icon tiga garis).
+     */
   );
 };
 

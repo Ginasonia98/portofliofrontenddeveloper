@@ -40,6 +40,10 @@ const Skills = () => {
                 style={{
                   background: `conic-gradient(rgb(8,145,170) ${skill.count}%,#ddd ${skill.count}%)`,
                 }}
+                /**
+                 *conic-gradient merupakan salah satu jenis gradien CSS yang menghasilkan warna berdasarkan sudut. Nilai rgb(8,145,170) digunakan sebagai warna awal gradien dan #ddd sebagai warna akhir gradien. Kemudian, ${skill.count}% digunakan untuk menentukan seberapa besar persentase gradien warna tersebut yang akan ditampilkan pada lingkaran.
+                  Dengan cara ini, lingkaran yang dihasilkan akan memiliki bagian yang terisi warna biru (dari warna awal) sebesar skill.count%, dan bagian lainnya akan terisi dengan warna abu-abu muda (dari warna akhir). Semakin besar nilai skill.count, maka semakin banyak pula bagian lingkaran yang akan terisi dengan warna biru.
+                 */
                 className="w-32 h-32 flex items-center justify-center rounded-full"
               >
                 <div className="text-6xl w-28 h-28 bg-rose-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
