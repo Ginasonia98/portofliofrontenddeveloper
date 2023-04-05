@@ -1,7 +1,20 @@
 import React from "react";
 import hero from "../assets/images/hero.png";
 const Hero = () => {
-  const social_media = ["logo-instagram", "logo-linkedin"];
+  const social_media = ["logo-instagram", "logo-linkedin", "logo-github"];
+
+  const handleSocialMediaClick = (icon) => {
+    if (icon === "logo-instagram") {
+      window.open(
+        "https://instagram.com/chikogina_?igshid=YmMyMTA2M2Y=",
+        "_blank"
+      );
+    } else if (icon === "logo-linkedin") {
+      window.open("https://www.linkedin.com/in/ginatobing/", "_blank");
+    } else if (icon === "logo-github") {
+      window.open("https://github.com/Ginasonia98?tab=repositories", "_blank");
+    }
+  };
 
   return (
     <section id="home" className="flex py-10 md:flex-row flex-col items-center">
@@ -24,6 +37,12 @@ const Hero = () => {
             {social_media?.map((icon) => (
               <div
                 key={icon}
+                role="button"
+                tabIndex="0"
+                onClick={() => handleSocialMediaClick(icon)}
+                onKeyPress={(e) =>
+                  e.key === "Enter" && handleSocialMediaClick(icon)
+                }
                 className="text-white hover:text-white cursor-pointer "
               >
                 <ion-icon name={icon}></ion-icon>

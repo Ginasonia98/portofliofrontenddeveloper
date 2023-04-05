@@ -26,22 +26,26 @@ const Contact = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    await addDoc(userCollectionRef, {
-      name: name,
-      email: email,
-      message: message,
-    })
-      .then(() => {
-        if (!alert("Form Submitted Successfully!"))
-          document.location = "https://www.google.com/webhp";
+    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+      alert("Please fill in all fields");
+    } else {
+      await addDoc(userCollectionRef, {
+        name: name,
+        email: email,
+        message: message,
       })
-      .catch((error) => {
-        alert(error.message);
-      });
+        .then(() => {
+          if (!alert("Form Submitted Successfully!"))
+            document.location = "https://portfoliofrontendgina.netlify.app/";
+        })
+        .catch((error) => {
+          alert(error.message);
+        });
 
-    setName("");
-    setEmail("");
-    setMessage("");
+      setName("");
+      setEmail("");
+      setMessage("");
+    }
   };
 
   return (
