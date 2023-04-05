@@ -88,14 +88,16 @@ const Project = () => {
             className="cursor-pointer"
           >
             {projects.map((project_info, i) => (
-              <SwiperSlide key={i}>
-                <div className="w-full h-fit p-4 bg-rose-700 rounded-xl">
+              <SwiperSlide key={i} className="h-full">
+                <div className="h-full p-4 bg-rose-700 rounded-xl">
                   <img
                     src={project_info.img}
                     alt=""
-                    className="w-full h-full object-fit object-cover rounded-lg aspect-w-1 aspect-h-1"
+                    className="w-full h-64 object-fit object-cover rounded-lg"
                   />
-                  <h3 className="text-xl my-4">{project_info.name}</h3>
+                  <h3 className="text-xl my-4 h-16 overflow-hidden">
+                    {project_info.name}
+                  </h3>
                   <div className="flex gap-3">
                     <a
                       href={project_info.github_link}
