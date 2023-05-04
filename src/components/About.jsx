@@ -18,7 +18,7 @@ const About = () => {
                 educational applications using figma, I have also solved several
                 algorithm cases at a fundamental stage. After deciding to join
                 the Frontend Engineering Bootcamp, I have created "TravelWeb"
-                using HTML, CSS, Bootstrap 5,and JavaScript. I've also made
+                using HTML, CSS, Bootstrap 5, and JavaScript. I've also made
                 "Chiko Movie Streaming Web" using ReactJs,Boostrap 5, dan
                 JavaScript. I've also made "Rainbow Food Journal Web" using
                 ReactJs. I've also made "Proverbs Market using ReactJs,
