@@ -1,6 +1,5 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import project1 from "../assets/images/project-1.png";
 import project2 from "../assets/images/project-2.png";
 import project3 from "../assets/images/project-3.png";
 import project4 from "../assets/images/project-4.png";
@@ -15,13 +14,6 @@ import { Pagination, Autoplay } from "swiper";
 
 const Project = () => {
   const projects = [
-    {
-      img: project1,
-      name: "Bunny Film",
-      github_link: "https://github.com/Ginasonia98/ginasoniatobing.github.io",
-      live_link:
-        "https://ginasonia98.github.io/ginasoniatobing.github.io/index.html",
-    },
     {
       img: project2,
       name: "TravellinWeb",

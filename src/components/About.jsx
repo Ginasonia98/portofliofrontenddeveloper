@@ -31,7 +31,7 @@ const About = () => {
               </p>
               <br />
               <br />
-              <a href="https://drive.google.com/file/d/11f_zwFAS_QR88RGmZi9ISncwowd7yXWv/view?usp=share_link">
+              <a href="https://drive.google.com/file/d/1iYcqgtxMtb7OEPjHZmfyMfDJwPaTmq9w/view?usp=sharing">
                 <button className="btn-primary">See My Curriculum Vitae</button>
               </a>
             </div>
