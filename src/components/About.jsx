@@ -17,17 +17,15 @@ const About = () => {
                 a team. I have collaborated to create related designs of
                 educational applications using figma, I have also solved several
                 algorithm cases at a fundamental stage. After deciding to join
-                the Frontend Engineering Bootcamp, I have also been able to
-                create a "Psalm Online Petshop" website, created a "web Bunny
-                Movie" mini-project using HTML, CSS, and Boostrap 5, and have
-                also created "TravellWeb" using HTML, CSS, Boostrap 5,
-                JavaScript. I've also made "Chiko Movie Streaming Web" using
-                ReactJs,Boostrap 5, dan JavaScript. I've also made "Rainbow Food
-                Journal Web" using ReactJs. I've also made "Proverbs Market
-                using ReactJs, ReactRedux,Tailwind CSS, and Firebase. I've also
-                made "Dashbord Sales" using ReactJs,Redux, Tailwind css and
-                Graphics. I have completed the Front End Developer Bootcamp
-                organized by Dibimbing.id.
+                the Frontend Engineering Bootcamp, I have created "TravelWeb"
+                using HTML, CSS, Bootstrap 5,and JavaScript. I've also made
+                "Chiko Movie Streaming Web" using ReactJs,Boostrap 5, dan
+                JavaScript. I've also made "Rainbow Food Journal Web" using
+                ReactJs. I've also made "Proverbs Market using ReactJs,
+                ReactRedux,Tailwind CSS, and Firebase. I've also made "Dashbord
+                Sales" using ReactJs,Redux, Tailwind css and Graphics. I have
+                completed the Front End Developer Bootcamp organized by
+                Dibimbing.id.
               </p>
               <br />
               <br />
