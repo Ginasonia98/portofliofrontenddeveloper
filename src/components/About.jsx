@@ -10,22 +10,15 @@ const About = () => {
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="p-2">
             <div className="text-gray-300 my-3 ">
-              <p className="text-justify leading-7 ">
+              <p className="text-center ">
                 I graduated from English literature but I chose a career as a
                 Frontend Engineer. This happened because of my attitude which is
                 always willing to learn new things. I am able to collaborate in
                 a team. I have collaborated to create related designs of
                 educational applications using figma, I have also solved several
-                algorithm cases at a fundamental stage. After deciding to join
-                the Frontend Engineering Bootcamp, I have created "TravelWeb"
-                using HTML, CSS, Bootstrap 5, and JavaScript. I've also made
-                "Chiko Movie Streaming Web" using ReactJs,Boostrap 5, dan
-                JavaScript. I've also made "Rainbow Food Journal Web" using
-                ReactJs. I've also made "Proverbs Market using ReactJs,
-                ReactRedux,Tailwind CSS, and Firebase. I've also made "Dashbord
-                Sales" using ReactJs,Redux, Tailwind css and Graphics. I have
-                completed the Front End Developer Bootcamp organized by
-                Dibimbing.id.
+                algorithm cases at a fundamental stage.My skill : HTML5, CSS,
+                Bootstrap,TailwindCSS,Github,Redux Saga,Firebase,Elektron,
+                Recharts,EmailJs,NextJs,ReactQuery,Figma,and RestApi.
               </p>
               <br />
               <br />

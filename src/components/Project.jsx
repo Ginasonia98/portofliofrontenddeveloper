@@ -7,6 +7,7 @@ import project5 from "../assets/images/project-5.png";
 import project6 from "../assets/images/project-6.png";
 import project7 from "../assets/images/project-7.png";
 import project8 from "../assets/images/project-8.png";
+import project9 from "../assets/images/project-9.png";
 import project_person from "../assets/images/project_person1.png";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -55,6 +56,12 @@ const Project = () => {
       name: "PokemonApp",
       github_link: "https://github.com/Ginasonia98/pokemonapp",
       live_link: "https://pokemonappgina.vercel.app/",
+    },
+    {
+      img: project9,
+      name: "NewsApp",
+      github_link: "https://github.com/Ginasonia98/newsapp",
+      live_link: "https://newsappgina.vercel.app/",
     },
   ];
   return (
