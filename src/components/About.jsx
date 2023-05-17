@@ -22,7 +22,7 @@ const About = () => {
               </p>
               <br />
               <br />
-              <a href="https://drive.google.com/file/d/1iYcqgtxMtb7OEPjHZmfyMfDJwPaTmq9w/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1RXhWC8jtSSBgmLXf4-MxdW856RcPPswK/view">
                 <button className="btn-primary">See My Curriculum Vitae</button>
               </a>
             </div>

@@ -24,6 +24,11 @@ const Contact = () => {
       text: "Gina Sonia Br Tobing",
       url: "https://www.linkedin.com/in/ginatobing/",
     },
+    {
+      logo: "logo-whatsapp",
+      text: "Whatsapp",
+      url: "https://api.whatsapp.com/send/?phone=6281398498112&text&type=phone_number&app_absent=0",
+    },
   ];
 
   const handleSubmit = async (event) => {
