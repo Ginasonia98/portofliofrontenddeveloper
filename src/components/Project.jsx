@@ -9,6 +9,8 @@ import project7 from "../assets/images/project-7.png";
 import project8 from "../assets/images/project-8.png";
 import project9 from "../assets/images/project-9.png";
 import project10 from "../assets/images/project-10.png";
+import project11 from "../assets/images/project-11.png";
+import project12 from "../assets/images/project-12.png";
 import project_person from "../assets/images/project_person1.png";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -70,14 +72,33 @@ const Project = () => {
       github_link: "https://github.com/Ginasonia98/blogapp",
       live_link: "https://ginablogtravel.netlify.app/",
     },
+    {
+      img: project11,
+      name: "Culinary Food",
+      github_link: "https://github.com/Ginasonia98/lombadiscoding",
+      live_link: "https://foodprojectgina.vercel.app/",
+    },
+    {
+      img: project12,
+      name: "ERPApp",
+      github_link: "https://github.com/Ginasonia98/Test2Kedatech",
+      live_link: "https://test2-kedatechginasoniatobing.vercel.app/",
+    },
   ];
   return (
-    <section id="projects" className="py-10 text-white">
+    <section id="projects" className="py-10 bg-white text-gray-900 relative">
+      {/* Add a black border at the top */}
+      <div className="absolute top-0 left-0 right-0 h-2 bg-gray-100"></div>
       <div className="text-center">
-        <h3 className="text-4xl font-semibold">
-          My <span className="text-cyan-600">Projects</span>
+        <h3 className="text-4xl font-semibold underline">
+          My <span>Projects</span>
         </h3>
-        <p className="text-white mt-3 text-lg">My awesome works</p>
+        {/* Arrow-down animation */}
+        <div className="mt-6 text-center">
+          <div className="animate-bounce">
+            <ion-icon name="arrow-down-circle-outline"></ion-icon>
+          </div>
+        </div>
       </div>
       <br />
       <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
@@ -100,20 +121,9 @@ const Project = () => {
             modules={[Pagination, Autoplay]}
             className="cursor-pointer"
           >
-            {/*
-              Beberapa properti yang digunakan dalam kode tersebut adalah:
-              slidesPerView: Menentukan jumlah slide yang ditampilkan dalam satu tampilan.
-              spaceBetween: Menentukan jarak antar slide.
-              breakpoints: Mengatur jumlah slide yang ditampilkan pada layar dengan lebar tertentu. Pada contoh di atas, ketika lebar layar mencapai 768px, jumlah slide yang ditampilkan menjadi 2.
-              loop: Menentukan apakah slideshow akan loop atau berhenti setelah slide terakhir.
-              autoplay: Mengatur otomatisasi slideshow dengan waktu delay 3000ms (3 detik).
-              pagination: Menampilkan tombol navigasi pada slideshow yang bisa diklik.
-              modules: Mengimpor modul-modul yang diperlukan untuk Swiper, yaitu Pagination dan Autoplay.
-              Komponen Swiper dapat menerima props tambahan seperti onSlideChange dan onSwiper yang bisa digunakan untuk menjalankan aksi tertentu pada slide tertentu. Selain itu, Swiper juga memiliki banyak opsi dan konfigurasi yang dapat diatur untuk membuat tampilan slideshow yang lebih kustom dan interaktif.
-            */}
             {projects.map((project_info, i) => (
               <SwiperSlide key={i} className="h-full">
-                <div className="h-full p-4 bg-rose-700 rounded-xl">
+                <div className="h-full p-4 bg-white text-gray-900 border border-blue-500 rounded-xl">
                   <img
                     src={project_info.img}
                     alt=""
